@@ -1,0 +1,44 @@
+.investment-fund-item {
+    width: 48%;
+    padding: 0 20px;
+    height: 280px;
+
+    &:nth-child(1) {
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    &:nth-child(2) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    &:nth-child(3) {
+        border-right: 1px solid #ccc;
+    }
+
+    .image-group {
+        height: 50px;
+
+        img {
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+
+    .investment-detail {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        span {
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+
+        a {
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+    }
+}

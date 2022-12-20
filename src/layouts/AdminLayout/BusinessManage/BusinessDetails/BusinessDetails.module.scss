@@ -1,0 +1,167 @@
+.wrapper {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+
+    .inner {
+        width: 100%;
+        height: 100%;
+
+        .header-main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .header-title {
+                display: flex;
+                column-gap: 8px;
+                align-items: center;
+                font-size: 1.4rem;
+                color: var(--primary-color-admin);
+
+                svg {
+                    height: 10px;
+                    width: 10px;
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        .content-main {
+            width: 100%;
+            height: auto;
+
+            .content-top {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+
+                .business-details-group {
+                    .business-group {
+                        display: flex;
+                        column-gap: 26px;
+                        min-width: 100%;
+                        height: 150px;
+
+                        .business-info {
+                            flex: 1;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .business-details {
+                                max-width: 740px;
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 6px;
+                                padding: 6px;
+
+                                .business-name {
+                                    font-size: 2.4rem;
+                                    line-height: 2.8rem;
+                                    font-weight: var(--font-weight-600);
+                                }
+
+                                .business-address {
+                                    font-size: 1.6rem;
+                                    line-height: 2.8rem;
+                                    font-weight: 400;
+                                    height: 52px;
+                                    color: rgba(0, 0, 0, 0.85);
+                                }
+
+                                .business-website {
+                                    font-size: 1.6rem;
+                                    line-height: 1.8rem;
+                                    color: #0caacc;
+                                }
+
+                                .business-email {
+                                    font-size: 1.6rem;
+                                    line-height: 1.8rem;
+                                }
+                            }
+
+                            .business-action {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .action-delete {
+                                    display: flex;
+                                    column-gap: 10px;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                    color: rgba(251, 37, 37, 1);
+
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .business-phone {
+                                    display: flex;
+                                    column-gap: 10px;
+                                    justify-content: flex-end;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .business-desc {
+                    h3 {
+                        font-size: 2rem;
+                        line-height: 2rem;
+                    }
+
+                    span {
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+
+            .content-bottom {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                margin-top: 20px;
+
+                .action {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    column-gap: 20px;
+                    border-bottom: 1px solid #ababab;
+
+                    button {
+                        border: none;
+                        background-color: transparent;
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        font-weight: 600;
+                        transition: 0.3s;
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+
+                .action-result {
+                    display: flex;
+                    gap: 16px;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

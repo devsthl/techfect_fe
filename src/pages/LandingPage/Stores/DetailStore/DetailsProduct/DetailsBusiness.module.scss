@@ -1,0 +1,156 @@
+.details-business-wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    .inner {
+        width: 100%;
+        height: auto;
+        padding: 20px 132px;
+
+        .details-group {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .details-left {
+                display: flex;
+                flex-direction: column;
+                row-gap: 12px;
+                font-size: 2rem;
+
+                .product-quantity {
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    line-height: 3.4rem;
+                    color: #0caacc;
+                    svg {
+                        min-width: 30px;
+                    }
+                }
+
+                .store-follow {
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    line-height: 3.4rem;
+                    color: #0caacc;
+                    svg {
+                        min-width: 30px;
+                    }
+                }
+            }
+
+            .details-right {
+                display: flex;
+                align-items: center;
+
+                button {
+                    border: 1px solid #fb2525;
+                    border-radius: 14px;
+                    padding: 10px 38px;
+                    min-width: 170px;
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    color: #fb2525;
+                    transition: 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #fb2525;
+                        color: #ffffff;
+                    }
+                }
+
+                .followed {
+                    border: 1px solid rgb(115, 36, 189);
+                    border-radius: 14px;
+                    padding: 10px 38px;
+                    font-weight: 500;
+                    font-size: 1.8rem;
+                    background-color: rgb(115, 36, 189);
+                    line-height: 2.2rem;
+                    color: #ffffff;
+                    transition: 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(115, 36, 189);
+                        opacity: 0.7;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .action-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 36px;
+            row-gap: 18px;
+
+            .btn-group {
+                display: flex;
+                justify-content: space-between;
+
+                .btn-follow {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30%;
+                    border: 1px solid #4285f4;
+                    box-shadow: -1px -1px 3px #ffffff, 1.5px 1.5px 3px rgba(174, 174, 192, 0.4);
+                    border-radius: 14px;
+                    padding: 6px 0;
+                    column-gap: 10px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #4285f4;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .product-group {
+            width: 100%;
+            margin-top: 36px;
+
+            .new-product-group {
+                display: flex;
+                flex-direction: column;
+                row-gap: 42px;
+                .new-product-title {
+                    font-weight: 600;
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                }
+
+                .product-list {
+                    display: flex;
+                    gap: 16px;
+                    flex-wrap: wrap;
+                }
+            }
+
+            .popular-product-group {
+                display: flex;
+                flex-direction: column;
+                row-gap: 42px;
+                margin-top: 56px;
+                .popular-product-title {
+                    font-weight: 600;
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                }
+
+                .product-list {
+                    display: flex;
+                    gap: 16px;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

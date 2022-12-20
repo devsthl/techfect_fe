@@ -1,0 +1,289 @@
+.edit-course-wrapper {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+
+    .inner {
+        width: 100%;
+        height: 100%;
+
+        .header-main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .header-title {
+                display: flex;
+                column-gap: 8px;
+                align-items: center;
+                font-size: 1.4rem;
+                color: var(--primary-color-admin);
+
+                svg {
+                    height: 10px;
+                    width: 10px;
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        .ant-picker.ant-picker-range {
+            height: 50px;
+            border: 1.5px solid #25aae1;
+            border-radius: 14px;
+        }
+
+        .content-main {
+            width: 100%;
+            height: auto;
+            margin-top: 18px;
+
+            .create-course-form {
+                width: 100%;
+
+                .form-wrapper {
+                    .form-top {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        column-gap: 20px;
+
+                        .form-top-left {
+                            width: 70%;
+
+                            .form-top-left-group {
+                                display: flex;
+                                flex-direction: column;
+
+                                label {
+                                    width: fit-content;
+                                    position: relative;
+                                    top: 10px;
+                                    left: 20px;
+                                    color: rgba(37, 170, 225, 1);
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                    background-color: #ffffff;
+                                    padding: 0 4px;
+                                    z-index: 2;
+                                    overflow: visible;
+                                }
+                            }
+
+                            .group-left {
+                                display: flex;
+                                width: 100%;
+                                justify-content: space-between;
+
+                                .start-date {
+                                    width: 45%;
+                                }
+
+                                .end-date {
+                                    width: 45%;
+                                }
+                            }
+
+                            .form-group {
+                                .select-group > div {
+                                    border-radius: 18px;
+                                    height: 50px;
+                                    outline: none;
+                                    border: 1.5px solid #25aae1;
+                                    border-radius: 14px;
+
+                                    > span:nth-child(2) {
+                                        font-size: 1.6rem;
+                                        line-height: 2.2rem;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+                                .input-7 {
+                                    width: 100%;
+                                    position: relative;
+                                    height: 50px;
+                                    border: 1.5px solid #25aae1;
+                                    border-radius: 14px;
+                                    outline: none;
+                                    padding: 10px;
+                                    font-size: 1.6rem;
+                                    line-height: 3rem;
+                                }
+                            }
+                        }
+
+                        .form-top-right {
+                            flex: 1;
+                            .form-top-right-group {
+                                display: flex;
+                                flex-direction: column;
+
+                                label {
+                                    width: fit-content;
+                                    position: relative;
+                                    top: 10px;
+                                    left: 20px;
+                                    color: rgba(37, 170, 225, 1);
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                    background-color: #ffffff;
+                                    padding: 0 4px;
+                                    z-index: 2;
+                                    overflow: visible;
+                                }
+
+                                &:nth-child(2) {
+                                    margin-top: 24px;
+                                }
+                            }
+                            .form-group {
+                                .input-3 {
+                                    width: 100%;
+                                    height: 50px;
+                                    border: 1.5px solid #25aae1;
+                                    border-radius: 14px;
+                                    outline: none;
+                                    padding: 10px;
+                                    font-size: 1.6rem;
+                                    line-height: 3rem;
+                                }
+
+                                .select-group > div {
+                                    border-radius: 18px;
+                                    height: 50px;
+                                    outline: none;
+                                    border: 1.5px solid #25aae1;
+                                    border-radius: 14px;
+
+                                    > span:nth-child(2) {
+                                        font-size: 1.6rem;
+                                        line-height: 2.2rem;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+
+                                .range-picker {
+                                    margin-top: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .participate-group {
+                        display: flex;
+                        width: 70%;
+                        justify-content: space-between;
+
+                        .participate {
+                            display: flex;
+                            flex-direction: column;
+                            width: 45%;
+
+                            label {
+                                width: fit-content;
+                                position: relative;
+                                top: 10px;
+                                left: 20px;
+                                color: rgba(37, 170, 225, 1);
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                background-color: #ffffff;
+                                padding: 0 4px;
+                                z-index: 2;
+                                overflow: visible;
+                            }
+
+                            .form-group {
+                                .input-3 {
+                                    width: 100%;
+                                    height: 50px;
+                                    border: 1.5px solid #25aae1;
+                                    border-radius: 14px;
+                                    outline: none;
+                                    padding: 10px;
+                                    font-size: 1.6rem;
+                                    line-height: 3rem;
+                                }
+
+                                .select-group > div {
+                                    border-radius: 18px;
+                                    height: 50px;
+                                    outline: none;
+                                    border: 1.5px solid #25aae1;
+                                    border-radius: 14px;
+
+                                    > span:nth-child(2) {
+                                        font-size: 1.6rem;
+                                        line-height: 2.2rem;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .form-bottom {
+                        .form-bottom-group {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                width: fit-content;
+                                position: relative;
+                                top: 10px;
+                                left: 20px;
+                                color: rgba(37, 170, 225, 1);
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                background-color: #ffffff;
+                                padding: 0 4px;
+                                z-index: 2;
+                                overflow: visible;
+                            }
+                        }
+
+                        .form-group {
+                            width: 100%;
+
+                            .input-textarea {
+                                width: 100%;
+                                position: relative;
+                                min-height: 250px;
+                                border: 1.5px solid #25aae1;
+                                border-radius: 14px;
+                                outline: none;
+                                padding: 10px;
+                                font-size: 1.6rem;
+                                line-height: 3rem;
+                            }
+                        }
+                    }
+
+                    .action-submit {
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 18px;
+
+                        button {
+                            padding: 8px 24px;
+                            background: #4285f4;
+                            border-radius: 10px;
+                            color: #ffffff;
+                            transition: 0.3s;
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

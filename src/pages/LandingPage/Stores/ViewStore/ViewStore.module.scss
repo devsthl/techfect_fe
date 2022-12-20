@@ -1,0 +1,94 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 32px 0;
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 80px;
+
+        .container-video {
+            width: 100%;
+            padding: 30px 100px 0px 100px;
+            gap: 20px;
+        }
+
+        .container-des {
+            padding: 41px 100px;
+            background-color: #fafafa;
+
+            .container-des-detail {
+                border-left: 4px solid #39b54a;
+
+                p {
+                    padding-left: 63px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
+        }
+
+        .container-ceo {
+            width: 100%;
+            padding: 41px 100px;
+            background-color: #fafafa;
+
+            .ceo-creator2 {
+                padding-left: 250px;
+                font-weight: 700;
+                font-size: 40px;
+            }
+
+            .container-ceo-detail {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                border-left: 4px solid #25aae1;
+                padding-left: 63px;
+                gap: 50px;
+
+                .ceo-creator {
+                    // display: flex;
+                    padding-left: 250px;
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+
+                .ceo-detail-2 {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+            }
+        }
+
+        .container-listcompany {
+            width: 100%;
+            padding: 41px 100px;
+            background-color: #fafafa;
+
+            .container-list-detail {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                border-left: 4px solid #d5d916;
+                padding-left: 63px;
+                gap: 50px;
+
+                .list-title {
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 38px;
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+    }
+}

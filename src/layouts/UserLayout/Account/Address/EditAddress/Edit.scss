@@ -1,0 +1,90 @@
+.edit-address-wrapper#edit-address {
+    width: 100%;
+    .inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        .title {
+            h3 {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.4rem;
+            }
+        }
+
+        .form-edit {
+            .form-group-name {
+                display: flex;
+                justify-content: space-between;
+
+                .form-group-5 {
+                    width: 48%;
+                }
+            }
+
+            .group-select {
+                display: flex;
+                flex-direction: column;
+                // row-gap: 18px;
+                .form-group-select {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 4px;
+                }
+            }
+
+            .default-address {
+                display: flex;
+                align-items: center;
+                color: #25aae1;
+                span {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    font-style: italic;
+                    margin-left: 4px;
+                }
+            }
+
+            .actions-button {
+                display: flex;
+                justify-content: flex-end;
+                column-gap: 12px;
+
+                .btn-submit {
+                    background: #25aae1;
+                    border-radius: 4px;
+                    height: 44px;
+                    min-width: 122px;
+                    color: var(--white-color);
+                    transition: 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+
+                .btn-back {
+                    background: var(--white-color);
+                    border-radius: 4px;
+                    height: 44px;
+                    min-width: 122px;
+                    color: #292d32;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    line-height: 1.8rem;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.7;
+                        background-color: #d9d9d9;
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+}

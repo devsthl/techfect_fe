@@ -1,0 +1,131 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 50px;
+    gap: 20px;
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .container-title {
+            display: flex;
+            gap: 5px;
+
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #25AAE1;
+            }
+        }
+
+        .list-function {
+            display: flex;
+            gap: 38px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            cursor: pointer;
+        }
+
+        .filter {
+            display: flex;
+            gap: 5px;
+
+            .input-filter {
+                border-radius: 4px;
+                width: 600px;
+                height: 55px;
+                padding: 10px;
+                border: 1px solid #006889;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                input {
+                    width: 100%;
+                    height: 20px;
+                    font-size: 18px;
+                    padding-left: 30px;
+                }
+
+                .icon1 {
+                    padding-left: 10px
+                }
+            }
+        }
+    }
+
+
+    .list-transport {
+        .table {
+            display: flex;
+            width: 100%;
+            background: rgba(239, 240, 246, 0.82);
+            height: 50px;
+            align-items: center;
+            padding-left: 20px;
+            border: 1px solid #c4c4cc;
+
+            input {
+                display: flex;
+                width: max(4%, 10px);
+                // justify-content: center;
+            }
+
+            .code {
+                display: flex;
+                width: max(10%, 100px);
+                justify-content: center;
+            }
+
+            .create {
+                display: flex;
+                justify-content: center;
+                width: max(12%, 150px);
+            }
+
+            .customer {
+                display: flex;
+                justify-content: center;
+                width: max(12%, 130px);
+            }
+
+            .pay {
+                display: flex;
+                justify-content: center;
+                width: max(13%, 180px);
+            }
+
+            .delivery {
+                display: flex;
+                justify-content: center;
+                width: max(13%, 180px);
+            }
+
+            .cod {
+                display: flex;
+                justify-content: center;
+                width: max(12%, 120px);
+            }
+
+            .total {
+                display: flex;
+                justify-content: center;
+                width: max(12%, 120px);
+            }
+
+            .chanel {
+                display: flex;
+                justify-content: center;
+                width: max(12%, 120px);
+            }
+        }
+    }
+
+
+}

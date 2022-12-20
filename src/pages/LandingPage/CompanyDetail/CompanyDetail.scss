@@ -1,0 +1,50 @@
+.company-detail-wrapper {
+    width: 100%;
+
+    .company-detail-inner {
+        width: 100%;
+        padding: 20px 70px;
+    }
+
+    .company-project {
+        width: 100%;
+        margin-top: 20px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+
+        .list-project {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 1px solid #25aae1;
+            border-radius: 14px;
+            padding: 14px 22px;
+            gap: 22px;
+        }
+    }
+
+    .company-products {
+        margin-top: 20px;
+        width: 100%;
+
+        h2 {
+            font-weight: 700;
+            font-size: 3.2rem;
+            line-height: 4rem;
+        }
+
+        .list-product {
+            width: 100%;
+            margin-top: 32px;
+            overflow: hidden !important;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 2%;
+            padding: 16px 0;
+        }
+    }
+}

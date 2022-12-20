@@ -1,0 +1,90 @@
+.consultants-wrapper {
+    width: 100%;
+    padding: 28px;
+    gap: 40px;
+
+    span {
+        font-size: 20px;
+    }
+
+    .consultants-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        .consultants-item {
+            display: flex;
+            border: 1px solid #4285f4;
+            box-shadow: 0px -12px 5px rgba(66, 62, 62, 0.01), 0px -7px 4px rgba(66, 62, 62, 0.05),
+                0px -3px 3px rgba(66, 62, 62, 0.09), 0px -1px 2px rgba(66, 62, 62, 0.1),
+                0px 0px 0px rgba(66, 62, 62, 0.1);
+            border-radius: 14px;
+            padding: 12px;
+
+            .consultants-image {
+                width: 140px;
+                height: 140px;
+                margin-right: 12px;
+
+                img {
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 12.4444px;
+                }
+            }
+
+            .consultants-details {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .consultants-details__left {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+                    gap: 10 px;
+                    margin-left: 10px;
+
+                    .consultants-details__name {
+                        font-weight: 600;
+                        font-size: 2.4rem;
+                        line-height: 1.8rem;
+                    }
+
+                    .consultants-details-grey {
+                        font-weight: 400;
+                        font-size: 2rem;
+                        line-height: 1.8rem;
+                    }
+                }
+
+                .consultants-details__right {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+
+                    .consultants-details__action {
+                        border: 1px solid #25aae1;
+                        border-radius: 14px;
+                        padding: 10px 30px;
+                        display: flex;
+                        column-gap: 8px;
+                        align-items: center;
+                        transition: 0.3s;
+
+                        svg {
+                            font-size: 2rem;
+                            color: #25aae1;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: bisque;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.order-item#order-item-user {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    margin-top: 18px;
+
+    .top-order {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #dadada;
+        padding-bottom: 20px;
+
+        svg {
+            color: #828282;
+        }
+
+        span {
+            margin-left: 12px;
+            color: #828282;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    .main-order {
+        width: 100%;
+
+        .list-products {
+            display: flex;
+            flex-direction: column;
+
+            .product-item {
+                display: flex;
+                margin-top: 12px;
+                border-bottom: 1px solid #dadada;
+                padding-bottom: 12px;
+
+                img {
+                    flex: 1;
+                    width: 15%;
+                    border-radius: 4px;
+                }
+
+                .product-details {
+                    flex: 7;
+                    margin-left: 18px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 8px 0;
+
+                    .product-title {
+                        font-weight: 500;
+                        font-size: 1.8rem;
+                        line-height: 1.8rem;
+                    }
+
+                    .product-quantity {
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                        color: #737373;
+                        margin-top: 12px;
+                    }
+                }
+
+                .product-price {
+                    flex: 2;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+
+    .bottom-order {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        align-items: center;
+
+        .action-left {
+            color: #ffffff;
+            .buy-again {
+                background: #4285f4;
+                border-radius: 4px;
+                padding: 8px 16px;
+                transition: 0.3s;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+
+            .check-order {
+                background: #25aae1;
+                padding: 8px 16px;
+                border-radius: 4px;
+                margin-left: 12px;
+                transition: 0.3s;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .action-right {
+            label {
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                color: #ababab;
+            }
+
+            span {
+                margin-left: 12px;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
+}

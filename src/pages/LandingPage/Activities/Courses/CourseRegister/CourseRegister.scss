@@ -1,0 +1,46 @@
+.course-register {
+    width: 100%;
+    padding-bottom: 32px;
+
+    &__header {
+        min-height: 100px;
+        background-image: url('~/src/assets/images/ListCourses/headerBG.jpg');
+        padding: 8px 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+
+        .course-register__name {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        .course-register__location {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: aliceblue;
+        }
+        .course-register__time {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: aliceblue;
+        }
+    }
+
+    .course-register__content {
+        display: flex;
+        padding: 0 100px;
+        column-gap: 3%;
+        margin-top: 24px;
+
+        .content-left {
+            flex: 7;
+        }
+
+        .content-right {
+            flex: 3;
+        }
+    }
+}

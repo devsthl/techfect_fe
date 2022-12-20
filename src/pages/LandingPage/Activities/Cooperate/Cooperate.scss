@@ -1,0 +1,208 @@
+.cooperate-wrapper {
+    width: 100%;
+    .register-now.ant-popover-disabled-compatible-wrapper {
+        border-radius: 5px;
+    }
+
+    .inner {
+        width: 100%;
+
+        .cooperate__content-main {
+            width: 100%;
+
+            .investment-funds-group {
+                width: 100%;
+                padding: 30px 70px;
+
+                .cooperate__title {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1 {
+                        font-weight: 600;
+                        font-size: 2.6rem;
+                        line-height: 3rem;
+                        margin-bottom: 12px;
+                    }
+                }
+
+                .month-year-btn-group {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 16px;
+                    color: #ffffff;
+
+                    .btn-month {
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                        line-height: 3rem;
+                        width: 170px;
+                        padding: 4px 28px;
+                        border-radius: 6px 0px 0px 6px;
+                        border: 1px solid #25aae1;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .btn-year {
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                        line-height: 3rem;
+                        width: 170px;
+                        padding: 4px 28px;
+                        border-radius: 0px 6px 6px 0px;
+                        border: 1px solid #25aae1;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .investments-list {
+                    display: flex;
+                    gap: 18px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .investments-item {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 12px;
+
+                        .investments-image {
+                            width: 280px;
+                            height: 175px;
+                            position: relative;
+
+                            img {
+                                width: 280px;
+                                height: 175px;
+                                border: 0.739992px solid #4285f4;
+                                box-shadow: inset 0px 1.47998px 2.95997px rgba(0, 0, 0, 0.25);
+                                border-radius: 10px;
+                            }
+
+                            .investments-funds-name {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                color: #ffffff;
+                                position: absolute;
+                                bottom: 10px;
+                                left: 0;
+                            }
+                        }
+
+                        .investments-details {
+                            width: 280px;
+                            min-height: 362px;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 20px;
+                            border: 0.95719px solid #4285f4;
+                            border-radius: 10px;
+
+                            .investments-details__content {
+                                flex: 1 1;
+
+                                .investments-details__title {
+                                    font-weight: 500;
+                                    font-size: 1.6rem;
+                                    line-height: 2.2rem;
+                                }
+
+                                ul {
+                                    padding: 0 20px;
+                                    li {
+                                        list-style-type: circle;
+                                    }
+                                }
+                            }
+
+                            .investments-details__bottom {
+                                display: flex;
+                                flex-direction: column;
+
+                                .investments-details__price {
+                                    display: flex;
+                                    justify-content: center;
+                                    font-size: 2rem;
+                                    font-weight: 700;
+                                }
+
+                                .investments-details__actions {
+                                    display: flex;
+                                    column-gap: 8px;
+                                    margin-top: 12px;
+                                    justify-content: center;
+                                    button {
+                                        width: 114px;
+                                        height: 26px;
+                                        border-radius: 5px;
+                                    }
+
+                                    .register-now {
+                                        background-color: #ff0000;
+                                        color: #ffffff;
+                                        transition: 0.3s;
+
+                                        &:hover {
+                                            opacity: 0.7;
+                                            cursor: pointer;
+                                        }
+                                    }
+
+                                    .show-details {
+                                        background-color: rgba(240, 240, 243, 1);
+                                        transition: 0.3s;
+
+                                        &:hover {
+                                            opacity: 0.7;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .cooperate-documents {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 18px;
+
+                    .cooperate-documents__title {
+                        span {
+                            font-weight: 600;
+                            font-size: 1.8rem;
+                            line-height: 3rem;
+                            color: rgba(0, 0, 0, 0.65);
+                        }
+                    }
+
+                    .cooperate-documents__files {
+                        display: flex;
+                        column-gap: 8px;
+                        margin-top: 12px;
+
+                        .documents {
+                            border: 1px solid rgba(0, 0, 0, 0.15);
+                            border-radius: 6px;
+                            padding: 4px 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

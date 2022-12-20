@@ -1,0 +1,23 @@
+.content {
+    min-width: 180px;
+
+    .menu-item {
+        min-width: 180px;
+        background-color: var(--white-color);
+
+        img {
+            width: 25px;
+            height: 25px;
+            border: transparent;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        span,
+        img {
+            cursor: pointer;
+        }
+    }
+}

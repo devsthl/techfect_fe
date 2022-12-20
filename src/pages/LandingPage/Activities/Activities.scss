@@ -1,0 +1,62 @@
+.wrapper#activities {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+
+    .inner {
+        width: 100%;
+        height: auto;
+
+        .top-main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0 5%;
+
+            .list-activities {
+                width: 100%;
+                display: flex;
+                border: 2px solid #4285f4;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 14px;
+                padding: 20px 40px;
+                display: flex;
+                justify-content: space-between;
+
+                .activities-item {
+                    cursor: pointer;
+                }
+
+                .activities-item.advise {
+                    color: #4285f4;
+                }
+
+                .activities-item.cooperate {
+                    color: #4285f4;
+                }
+
+                .activities-item.participate {
+                    color: #4285f4;
+                }
+
+                .activities-item.courses {
+                    color: #4285f4;
+                }
+
+                li {
+                    display: flex;
+                    column-gap: 12px;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+
+        .content-main {
+            width: 100%;
+            padding: 0 5%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.shopping-mall-item {
+    display: flex;
+    width: 40%;
+    height: 124px;
+    border-radius: 1.4rem;
+    background: #ffffff;
+
+    .image-group {
+        height: 100%;
+        width: 36%;
+        border-bottom-left-radius: 1.2rem;
+        border-top-left-radius: 1.2rem;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .shopping-mall-detail {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        padding: 12px 0;
+
+        ul {
+            padding-left: 18px;
+        }
+
+        ul li {
+            list-style-type: circle;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+    }
+}

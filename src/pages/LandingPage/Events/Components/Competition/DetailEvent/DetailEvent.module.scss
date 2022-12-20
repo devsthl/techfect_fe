@@ -1,0 +1,154 @@
+.inner {
+    padding-bottom: 20px;
+
+    .detail {
+        width: 100%;
+        box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #ffffff;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #fafafa;
+        padding: 30px;
+        border: 1px solid red;
+
+        .content1 {
+            display: flex;
+            width: 100%;
+
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            .des {
+                display: flex;
+                width: 70%;
+                color: #4285f4;
+            }
+        }
+
+        .content2 {
+            display: flex;
+            width: 100%;
+
+            .title {
+                display: flex;
+                justify-content: center;
+                width: 30%;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                align-items: center;
+            }
+
+            .des {
+                display: flex;
+                width: 70%;
+                color: #4285f4;
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+    }
+
+    .contents {
+        box-shadow: inset -1px -1px 1px rgba(220, 155, 155, 0.7), inset 1px 1px 2px rgba(138, 138, 151, 0.2);
+        border-radius: 14px;
+        background-color: #fafafa;
+        border-radius: 14px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+
+        .content-img {
+            width: max(23%, 200px);
+            padding: 15px;
+            border-bottom-left-radius: 14px;
+            border-top-left-radius: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                border-radius: 14px;
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        .content-time-place {
+            width: max(15%, 100px);
+            display: flex;
+            padding: 20px 0px 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .content-des {
+            width: max(28%, 200px);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #4285f4;
+            padding: 20px;
+            display: flex;
+            gap: 100px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-btn1 {
+            width: max(20%, 200px);
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            span {
+                font-size: 2rem;
+            }
+        }
+
+        .content-btn2 {
+            padding-top: 20px;
+            width: max(14%, 100px);
+
+            .status-btn.end {
+                background: #fb2525;
+                padding: 8px 16px;
+                box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #fb2525;
+                border-radius: 10px;
+                color: #ffffff;
+                width: 120px;
+            }
+
+            .status-btn.in-progress {
+                padding: 8px 16px;
+                background: #39b54a;
+                box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #6aaa4d;
+                border-radius: 10px;
+                width: 120px;
+                color: #ffffff;
+            }
+
+            .status-btn.upcoming {
+                background: #ababab;
+                box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #ababab;
+                border-radius: 10px;
+                padding: 8px 16px;
+                width: 120px;
+                color: #ffffff;
+            }
+        }
+    }
+}

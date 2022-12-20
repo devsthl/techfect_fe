@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    gap: 10px;
+
+    span {
+        color: #25aae1;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,25 @@
+.company-wrapper {
+    width: 100%;
+
+    .company-inner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 70px;
+
+        .search-group {
+            margin-top: 20px;
+        }
+
+        .list-company {
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px 2%;
+        }
+    }
+}

@@ -1,0 +1,226 @@
+.user-address-wrapper {
+    width: 100%;
+
+    .inner {
+        padding: 20px;
+
+        .content-top {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 16px;
+            .title {
+                border-bottom: 1px solid #000000;
+                padding-bottom: 10px;
+                color: rgba(37, 170, 225, 1);
+                flex: 1 1;
+                padding-right: 10px;
+                span {
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                }
+            }
+
+            .btn-add {
+                display: flex;
+                column-gap: 6px;
+                align-items: center;
+                background: #25aae1;
+                border-radius: 10px;
+                color: var(--white-color);
+                padding: 0px 14px;
+                transition: 0.3s;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .content-bottom {
+            width: 100%;
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+
+            .address-default.address-group {
+                width: 100%;
+                height: auto;
+                min-height: 142px;
+                display: flex;
+                background: rgba(37, 170, 225, 0.1);
+                border: 1px solid #25aae1;
+                border-radius: 10px;
+                align-items: center;
+
+                .address-details {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 12px;
+                    flex: 1 1;
+                    padding: 16px;
+
+                    .address-details__group {
+                        display: flex;
+
+                        .label-name {
+                            min-width: 140px;
+                            font-size: 2rem;
+                            font-weight: 600;
+                            line-height: 2.8rem;
+                        }
+
+                        .address-info {
+                            font-size: 2rem;
+                            font-weight: 400;
+                            line-height: 2.8rem;
+                        }
+                    }
+                }
+
+                .address-actions {
+                    min-width: 160px;
+                    min-height: inherit;
+                    padding: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .actions-top {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        button {
+                            min-width: 168px;
+                            height: 44px;
+                            background: #25aae1;
+                            border: 1px solid #d9d9d9;
+                            border-radius: 10px;
+
+                            transition: 0.3s;
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: 0.7;
+                            }
+                        }
+
+                        span {
+                            margin-top: 6px;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            line-height: 1.4rem;
+                            font-style: italic;
+                        }
+                    }
+
+                    .actions-bottom {
+                        display: flex;
+                        justify-content: flex-end;
+                        column-gap: 16px;
+
+                        svg:hover {
+                            cursor: pointer;
+                        }
+
+                        .action-edit {
+                            color: rgba(37, 170, 225, 1);
+                        }
+
+                        .action-delete {
+                            color: rgba(251, 37, 37, 1);
+                        }
+                    }
+                }
+            }
+
+            .address-group {
+                width: 100%;
+                height: auto;
+                min-height: 142px;
+                display: flex;
+                border-radius: 10px;
+                align-items: center;
+                background: var(--white-color);
+                border: 1px solid rgba(217, 217, 217, 1);
+
+                .address-details {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 12px;
+                    flex: 1 1;
+                    padding: 16px;
+
+                    .address-details__group {
+                        display: flex;
+
+                        .label-name {
+                            min-width: 140px;
+                            font-size: 2rem;
+                            font-weight: 600;
+                            line-height: 2.8rem;
+                        }
+
+                        .address-info {
+                            font-size: 2rem;
+                            font-weight: 400;
+                            line-height: 2.8rem;
+                        }
+                    }
+                }
+
+                .address-actions {
+                    min-width: 160px;
+                    min-height: inherit;
+                    padding: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .actions-top {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        button {
+                            min-width: 168px;
+                            height: 44px;
+                            background: #d9d9d9;
+                            border: 1px solid #d9d9d9;
+                            border-radius: 10px;
+                        }
+
+                        span {
+                            margin-top: 6px;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            line-height: 1.4rem;
+                            font-style: italic;
+                        }
+                    }
+
+                    .actions-bottom {
+                        display: flex;
+                        justify-content: flex-end;
+                        column-gap: 16px;
+
+                        svg:hover {
+                            cursor: pointer;
+                        }
+
+                        .action-edit {
+                            color: rgba(37, 170, 225, 1);
+                        }
+
+                        .action-delete {
+                            color: rgba(251, 37, 37, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

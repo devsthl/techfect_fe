@@ -1,0 +1,135 @@
+.card-company-wrapper {
+    width: 20%;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+
+    .company-detail {
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+        left: 0;
+        top: 50%;
+        padding: 5%;
+        color: #ffffff;
+        opacity: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .logo-title {
+            position: absolute;
+            top: 10%;
+            margin-right: auto;
+            margin-left: auto;
+            right: 0;
+            left: 0;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 100;
+            transition: ease 0.7s;
+        }
+
+        .company-detail {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin-right: auto;
+            margin-left: auto;
+            right: 0;
+            left: 0;
+            top: 60%;
+            padding: 5%;
+            transition: ease 0.7s;
+            color: #ffffff;
+            opacity: 1;
+        }
+
+        .see-detail {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            opacity: 1;
+
+            button {
+                background: #25aae1;
+                border-radius: 10px;
+                padding: 4px 8px;
+                color: #ffffff;
+                transition: 0.4s;
+
+                &:hover {
+                    cursor: pointer;
+                    background: #ffffff;
+                    color: #25aae1;
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .logo-title {
+        position: absolute;
+        top: 20%;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+        left: 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+
+        .image-group {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .title-group {
+            margin-top: 4px;
+            color: #ffffff;
+            font-size: 1.6rem;
+        }
+    }
+
+    .see-detail {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        opacity: 0;
+        transition: ease 0.7s;
+
+        button {
+            background: #25aae1;
+            border-radius: 10px;
+            padding: 4px 8px;
+            color: #ffffff;
+            transition: 0.4s;
+
+            &:hover {
+                cursor: pointer;
+                background: #ffffff;
+                color: #25aae1;
+            }
+        }
+    }
+}

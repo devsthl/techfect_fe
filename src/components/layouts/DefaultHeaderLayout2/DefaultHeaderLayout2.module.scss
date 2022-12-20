@@ -1,0 +1,25 @@
+.wrapper {
+    width: 100%;
+
+    .slideshow {
+        width: 100%;
+        background-color: #ccc;
+
+        img {
+            width: 100%;
+        }
+
+        .slide-detail {
+            width: 100%;
+            background-size: cover;
+        }
+    }
+
+    .container {
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

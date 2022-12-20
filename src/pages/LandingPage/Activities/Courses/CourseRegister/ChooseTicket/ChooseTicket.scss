@@ -1,0 +1,77 @@
+.choose-ticket {
+    width: 100%;
+    padding: 18px 0;
+
+    .choose-ticket__header {
+        display: flex;
+        border-bottom: 3px solid #ccc;
+        padding-bottom: 4px;
+
+        .participate {
+            flex: 7;
+        }
+
+        .ticket-price {
+            flex: 1;
+        }
+
+        .quantity {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .choose-ticket__body {
+        display: flex;
+        margin-top: 18px;
+
+        .content-participate {
+            flex: 7;
+        }
+
+        .content-price {
+            flex: 1;
+        }
+
+        .content-quantity {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+
+            .commodity-quantity__group {
+                padding: 4px 4px;
+                border: 1px solid #dbdbdb;
+                border-radius: 3px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90px;
+
+                input {
+                    text-align: center;
+                    // min-width: 30px;
+                    width: 10px;
+                }
+
+                .minus {
+                    padding: 4px;
+                    border-right: 1px solid #dbdbdb;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .plus {
+                    padding: 4px;
+                    border-left: 1px solid #dbdbdb;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

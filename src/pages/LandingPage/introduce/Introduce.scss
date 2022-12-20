@@ -1,0 +1,144 @@
+.introduce-warpper {
+    padding: 0 0 20px 0;
+    width: 100%;
+
+    .introduce-inner {
+        padding: 40px 80px;
+        background-color: #f2ebde;
+    }
+
+    .investment-funds {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 80px;
+
+        .list-investment {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            margin-top: 40px;
+            background: #ffffff;
+            border: 1px solid #25aae1;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-size: 1.8rem;
+            transition: ease 0.4s;
+
+            svg {
+                margin-left: 10px;
+                color: #25aae1;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: #25aae1;
+                color: #ffffff;
+
+                svg {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .shopping-mall {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f3f3f3;
+        padding: 16px 0;
+
+        .list-shopping {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            margin-top: 20px;
+            background: #ffffff;
+            border: 1px solid #25aae1;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-size: 1.8rem;
+            transition: ease 0.4s;
+
+            svg {
+                margin-left: 10px;
+                color: #25aae1;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: #25aae1;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .event {
+        margin-top: 60px;
+        width: 100%;
+        padding: 0 110px;
+        .list-event {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 5%;
+        }
+    }
+
+    .rotation {
+        .card {
+            perspective: 150rem;
+            position: relative;
+            height: 40rem;
+            max-width: 400px;
+            margin: 2rem;
+            box-shadow: none;
+            background: none;
+        }
+
+        .card-side {
+            height: 35rem;
+            border-radius: 15px;
+            transition: all 0.8s ease;
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            padding: 2rem;
+            color: white;
+        }
+
+        .card-side.back {
+            transform: rotateY(-180deg);
+            background-color: #4158d0;
+            background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+        }
+
+        .card-side.front {
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        }
+
+        .card:hover .card-side.front {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .card-side.back {
+            transform: rotateY(0deg);
+        }
+    }
+}

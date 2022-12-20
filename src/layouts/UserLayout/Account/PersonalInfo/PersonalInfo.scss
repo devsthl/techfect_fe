@@ -1,0 +1,183 @@
+.wrapper#personal-info {
+    width: 100%;
+
+    .inner {
+        padding: 20px;
+
+        .title {
+            border-bottom: 1px solid #000000;
+            padding-bottom: 10px;
+            color: rgba(37, 170, 225, 1);
+            span {
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+            }
+        }
+
+        .content-main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .personal-avatar {
+                margin-top: 10px;
+                width: 100%;
+
+                .avatar-group {
+                    width: 100%;
+                    min-height: 150px;
+                    position: relative;
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    svg {
+                        color: rgba(37, 170, 225, 1);
+                        width: 30px;
+                        height: 30px;
+                        top: 0;
+                        left: 125px;
+                        position: absolute;
+                    }
+                }
+            }
+
+            .personal-form {
+                width: 100%;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+                    row-gap: 16px;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    color: #828282;
+                }
+
+                .form-group {
+                    display: flex;
+
+                    label {
+                        min-width: 150px;
+                    }
+                    .ant-picker-input {
+                        padding-left: 4px;
+                    }
+
+                    .ant-picker {
+                        border: none;
+                        border: 1px solid #25aae1;
+                        border-radius: 10px;
+                        height: 32px;
+                    }
+
+                    .input-group {
+                        max-height: 32px;
+
+                        input {
+                            padding-left: 16px;
+                            flex: 1 1;
+                            min-width: 476px;
+                            height: 32px;
+                            background: transparent;
+                        }
+
+                        svg {
+                            color: #25aae1;
+                            font-size: 1.8rem;
+                            margin: 0 6px;
+                        }
+
+                        .ant-input-affix-wrapper {
+                            border: 1px solid #25aae1;
+                            border-radius: 10px;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            padding-left: 0;
+                        }
+                    }
+
+                    .ant-select-selector {
+                        border: none;
+                        height: 30px;
+                        border: 1px solid #25aae1;
+                        border-radius: 10px;
+                        height: 32px;
+                        min-width: 200px;
+
+                        .ant-select-selection-search-input::placeholder {
+                            color: red;
+                        }
+                    }
+
+                    .form-select {
+                        display: flex;
+                        column-gap: 10px;
+                        border: 1px solid #25aae1;
+                        border-radius: 10px;
+                        align-items: center;
+                        padding: 0 12px;
+                        height: 32px;
+
+                        .select-item {
+                            display: flex;
+                            column-gap: 10px;
+                            align-items: center;
+                        }
+
+                        .vertical-line {
+                            color: #25aae1;
+                        }
+
+                        svg {
+                            font-size: 1.4rem;
+                            margin: 0 6px;
+                        }
+                    }
+
+                    .select-gender-group {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #25aae1;
+                        border-radius: 10px;
+                        padding: 0 12px;
+
+                        span {
+                            min-width: 200px;
+                            flex: 1 1;
+                        }
+
+                        svg {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                .submit-action {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+
+                    .btn-submit {
+                        width: fit-content;
+                        padding: 6px 12px;
+                        background: #4285f4;
+                        border-radius: 10px;
+                        color: var(--white-color);
+                        transition: 0.3s;
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

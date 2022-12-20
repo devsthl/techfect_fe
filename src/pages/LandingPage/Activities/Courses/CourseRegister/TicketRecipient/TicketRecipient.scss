@@ -1,0 +1,173 @@
+.ticket-recipient {
+    width: 100%;
+
+    .ticket-top {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+    .recipient-group {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 2.8rem;
+            border-bottom: 3px solid #ccc;
+            padding-bottom: 4px;
+        }
+
+        .recipient-detail {
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+            margin-top: 18px;
+
+            .form-group {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 2.2rem;
+
+                .left-detail {
+                    display: flex;
+                    column-gap: 10px;
+                    align-items: center;
+
+                    svg {
+                        font-size: 2rem;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .payment-method {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        row-gap: 12px;
+
+        .title {
+            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 2.8rem;
+            border-bottom: 3px solid #ccc;
+            padding-bottom: 4px;
+        }
+
+        .payment-detail {
+            span {
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 2.2rem;
+            }
+        }
+    }
+
+    .booking-detail {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        row-gap: 12px;
+        margin-bottom: 24px;
+
+        .title {
+            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 2.8rem;
+            border-bottom: 3px solid #ccc;
+            padding-bottom: 4px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.2rem;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 8px;
+
+            .left-detail {
+                flex: 7;
+                display: flex;
+                align-items: center;
+            }
+
+            .right-detail {
+                flex: 3;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .form-detail {
+            display: flex;
+
+            .left-detail {
+                flex: 7;
+                display: flex;
+                align-items: center;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 2.2rem;
+            }
+
+            .right-detail {
+                flex: 3;
+                display: flex;
+                justify-content: flex-end;
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 2.2rem;
+            }
+        }
+    }
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        background-color: #666;
+        color: #ffffff;
+        align-items: center;
+        padding: 0 24px;
+
+        label {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2.2rem;
+        }
+
+        span {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2.2rem;
+        }
+    }
+
+    .action-btn {
+        width: 100%;
+        height: 40px;
+        margin-top: 24px;
+
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: #90ba3e;
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2.2rem;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}

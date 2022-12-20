@@ -1,0 +1,87 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .inner {
+        display: flex;
+        padding: 40px 100px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        .content-btn {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            gap: 30px;
+            flex-direction: column;
+
+            .currentId {
+                background-color: #4285F4;
+            }
+
+            .btn {
+                display: flex;
+                gap: 30px;
+                width: 100%;
+            }
+
+            .detail {
+                display: flex;
+                width: 100%;
+                border-radius: 14px;
+
+                .deltai-images {
+                    display: flex;
+                    padding: 10px 0px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 40px;
+                    width: 100%;
+                    flex-direction: column;
+
+                    .container-image {
+                        display: flex;
+                        width: 100%;
+
+                        .list-image {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #df5327;
+                        }
+
+                        .detail-image {
+                            display: flex;
+                            gap: 20px;
+
+                            img {
+                                width: 250px;
+                                height: 220px;
+                            }
+                        }
+                    }
+                }
+
+                .detail-video {
+                    display: flex;
+                    padding: 10px 0px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 40px;
+                    width: 100%;
+                }
+
+                .detail-download {
+                    display: flex;
+                    width: 100%;
+                    gap: 20px;
+                    flex-direction: column;
+                }
+            }
+
+
+        }
+    }
+}

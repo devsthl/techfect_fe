@@ -1,0 +1,422 @@
+.payment-cart-wrapper#payment-cart {
+    width: 100%;
+    height: auto;
+
+    .inner {
+        width: 100%;
+        height: auto;
+        padding: 20px 100px;
+
+        .payment-header {
+            display: flex;
+            flex-direction: column;
+
+            .header-action {
+                display: flex;
+                justify-content: space-between;
+
+                .back-to-cart {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .header-title {
+                    font-weight: 400;
+                    font-size: 2.4rem;
+                    line-height: 3.2rem;
+                }
+            }
+
+            .header-address {
+                display: flex;
+                border: 1px solid #dcdcdc;
+                padding: 20px;
+
+                .address-details {
+                    flex: 1 1;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+
+                    .address-title {
+                        display: flex;
+
+                        span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+                .action-replace {
+                    display: flex;
+                    align-items: center;
+                    button {
+                        color: #ffffff;
+                        background: #4285f4;
+                        border-radius: 5px;
+                        padding: 4px 16px;
+                        transition: 0.3s;
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+        }
+
+        .payment-main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 28px;
+
+            .payment-cart {
+                width: 100%;
+
+                .product-payment-header {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    .title {
+                        justify-content: flex-end;
+                        text-align: left;
+                        flex: 4;
+                    }
+
+                    .type {
+                        flex: 2;
+                    }
+
+                    .price {
+                        flex: 1;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    .quantity {
+                        flex: 1;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    .cost {
+                        flex: 2;
+                        justify-content: flex-end;
+                        text-align: right;
+                    }
+                }
+
+                .store-group {
+                    width: 100%;
+
+                    .list-store {
+                        display: flex;
+                        flex-direction: column;
+                        border-top: 2px solid rgba(0, 0, 0, 0.2);
+                        margin-top: 12px;
+
+                        .store-header {
+                            margin-top: 16px;
+                            display: flex;
+
+                            .chat-group {
+                                margin-left: 10px;
+                                color: #39b54a;
+
+                                span {
+                                    margin-left: 4px;
+                                }
+                            }
+                        }
+
+                        .store-product {
+                            width: 100%;
+
+                            .list-product {
+                                display: flex;
+                                flex-direction: column;
+
+                                .product-item {
+                                    display: flex;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    font-size: 14px;
+                                    color: #222;
+                                    min-height: 55px;
+
+                                    .image-name-group {
+                                        justify-content: flex-start;
+                                        flex: 4;
+                                        display: flex;
+                                        align-items: center;
+
+                                        img {
+                                            width: 40px;
+                                            height: 40px;
+                                        }
+
+                                        span {
+                                            margin: 0 15px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            overflow: hidden;
+                                        }
+                                    }
+
+                                    .type-group {
+                                        justify-content: flex-start;
+                                        color: #929292;
+                                        flex: 2;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+
+                                    .price-group {
+                                        flex: 1;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+
+                                    .quantity-group {
+                                        flex: 1;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+
+                                    .cost-group {
+                                        justify-content: flex-end;
+                                        flex: 2;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+
+                            .voucher-group {
+                                width: 100%;
+                                height: 50px;
+
+                                .voucher {
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    .voucher-action {
+                                        &:hover {
+                                            cursor: pointer;
+                                            color: #003865;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .delivery-group {
+                                display: flex;
+                                min-height: 50px;
+                                border-top: 1px dashed black;
+                                border-bottom: 1px dashed black;
+
+                                .note-group {
+                                    height: 80px;
+                                    width: 35%;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0 30px 0 0;
+                                    border-right: 1px dashed black;
+
+                                    label {
+                                        min-width: 80px;
+                                    }
+                                }
+
+                                .delivery-details {
+                                    height: 80px;
+                                    width: 70%;
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 0 0 0 30px;
+
+                                    label {
+                                        min-width: 150px;
+                                    }
+
+                                    .delivery {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 100%;
+
+                                        .delivery-header {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .total-price {
+                                margin-top: 22px;
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-end;
+
+                                p {
+                                    font-weight: 400;
+                                    font-size: 1.4rem;
+                                    line-height: 2.2rem;
+
+                                    span {
+                                        margin-left: 12px;
+                                        font-weight: 600;
+                                        font-size: 2rem;
+                                        line-height: 2.2rem;
+                                        color: #25aae1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .payment-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .my-cart__right-wrapper {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+
+                .my-cart__right {
+                    width: 100%;
+                    margin-top: 40px;
+                    border: 1px solid #4285f4;
+                    border-radius: 3px;
+                    padding: 16px;
+
+                    .order-summary {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 12px;
+
+                        .order-summary__title {
+                            font-weight: 500;
+                            font-size: 1.8rem;
+                            line-height: 2.8rem;
+                            color: #9b9b9b;
+                        }
+
+                        .order-summary__group {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            label {
+                                font-weight: 400;
+                                font-size: 1.4rem;
+                                line-height: 2.8rem;
+                                color: #141417;
+                            }
+                        }
+
+                        .total-money {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 20px;
+                            border-top: 1px solid #edeef0;
+                            padding-top: 20px;
+
+                            .total-money__number {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+
+                                .total-money__number-price {
+                                    font-weight: 500;
+                                    font-size: 2.4rem;
+                                    line-height: 3rem;
+                                    color: #4285f4;
+                                }
+
+                                .total-money__vat {
+                                    font-weight: 400;
+                                    font-size: 1.2rem;
+                                    line-height: 1.8rem;
+                                    color: #9b9b9b;
+                                }
+                            }
+                        }
+
+                        .voucher-code {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 16px;
+                            input {
+                                width: 100%;
+                                background: #e6edf5;
+                                box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+                                border-radius: 35px;
+                                padding: 4px 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .order-action {
+                width: 100%;
+
+                button {
+                    color: #ffffff;
+                    width: 100%;
+                    background: #4285f4;
+                    box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
+                    border-radius: 25px;
+                    padding: 14px 50px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            .payment-method {
+                .payment-method__group {
+                    margin-top: 8px;
+                    display: flex;
+                    column-gap: 24px;
+                }
+            }
+        }
+    }
+}

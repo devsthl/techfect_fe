@@ -1,0 +1,30 @@
+.all-order-wrapper {
+    width: 100%;
+
+    .search-group {
+        width: 100%;
+
+        .search-wrapper {
+            width: 30%;
+            display: flex;
+            background: rgba(230, 234, 238, 0.7);
+            border-radius: 5px;
+            height: 50px;
+            align-items: center;
+
+            input {
+                background-color: transparent;
+                padding-left: 16px;
+                width: 90%;
+            }
+
+            svg {
+                font-size: 2rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

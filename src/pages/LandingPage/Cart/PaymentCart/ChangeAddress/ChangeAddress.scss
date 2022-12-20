@@ -1,0 +1,22 @@
+.change-address-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .action-submit {
+        margin-top: 12px;
+        text-align: right;
+
+        button {
+            color: #ffffff;
+            background: #4285f4;
+            border-radius: 5px;
+            padding: 4px 16px;
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+    }
+}

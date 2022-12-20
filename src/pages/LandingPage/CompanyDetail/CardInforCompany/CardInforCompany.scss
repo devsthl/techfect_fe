@@ -1,0 +1,35 @@
+.card-infor-company {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+
+    .image-group {
+        border: 1px solid #25aae1;
+        border-radius: 14px;
+        width: 20%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .company-infor {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+
+        div {
+            font-weight: 600;
+            font-size: 3.2rem;
+            line-height: 3.4rem;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
+    }
+}

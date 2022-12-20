@@ -1,0 +1,34 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .content-stores {
+        width: 100%;
+        padding: 30px 100px 100px 100px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+
+        .field-title {
+            font-weight: 600;
+            font-size: 3.2rem;
+        }
+
+        .content-stores-detail {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px 16px;
+            position: relative;
+
+            .content-formsearch {
+                position: absolute;
+                top: -330px;
+                right: 0;
+                left: 0;
+            }
+        }
+    }
+}

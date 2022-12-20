@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // justify-content: center;
+    // align-items: center;
+
+    .table {
+        display: flex;
+        width: 100%;
+        background-color: #fafafa;
+        height: 50px;
+        align-items: center;
+        padding-left: 20px;
+        border-bottom: 1px solid #c4c4cc;
+        border-left: 1px solid #c4c4cc;
+        border-right: 1px solid #c4c4cc;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--primary);
+        }
+
+        input {
+            display: flex;
+            width: max(4%, 10px);
+        }
+
+        .code {
+            display: flex;
+            width: max(10%, 100px);
+            justify-content: center;
+        }
+
+        .create {
+            display: flex;
+            justify-content: center;
+            width: max(12%, 150px);
+        }
+
+        .customer {
+            display: flex;
+            justify-content: center;
+            width: max(12%, 130px);
+        }
+
+        .pay {
+            display: flex;
+            justify-content: center;
+            width: max(13%, 180px);
+        }
+
+        .delivery {
+            display: flex;
+            justify-content: center;
+            width: max(13%, 180px);
+        }
+
+        .cod {
+            display: flex;
+            justify-content: center;
+            width: max(12%, 120px);
+        }
+
+        .total {
+            display: flex;
+            justify-content: center;
+            width: max(12%, 120px);
+        }
+
+        .chanel {
+            display: flex;
+            justify-content: center;
+            width: max(12%, 120px);
+        }
+    }
+}

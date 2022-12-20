@@ -1,0 +1,74 @@
+.payment-ticket {
+    width: 100%;
+
+    .payment-ticket__header {
+        width: 100%;
+
+        h2 {
+            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 2.8rem;
+        }
+    }
+
+    .payment-ticket__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+
+        .row {
+            display: flex;
+            width: 100%;
+
+            .col {
+                width: 50%;
+
+                .form-group {
+                    border: 1px solid #ccc;
+                    height: 50px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    label {
+                        width: 80px;
+                        span {
+                            color: #ff0000;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+
+    .payment-method {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        row-gap: 12px;
+
+        .title {
+            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 2.8rem;
+            border-bottom: 3px solid #ccc;
+            padding-bottom: 4px;
+        }
+
+        .payment-detail {
+            span {
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 2.2rem;
+            }
+        }
+    }
+}

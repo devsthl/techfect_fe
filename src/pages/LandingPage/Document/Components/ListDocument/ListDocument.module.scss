@@ -1,0 +1,98 @@
+.wrapper {
+    display: flex;
+    width: 50%;
+    border: 2px solid #4285f4;
+    border-radius: 14px;
+
+    .content-left {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        width: 75%;
+        gap: 150px;
+
+        .type {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .des-title {
+            display: flex;
+            flex-direction: column;
+            // gap: 4px;
+            width: 100%;
+
+            p {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                color: #df5327;
+            }
+
+            span {
+                width: 100%;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 24px;
+                color: #496189;
+                margin-bottom: 20px;
+            }
+
+            .list-function {
+                display: flex;
+                gap: 36px;
+
+                .time {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-right {
+        width: 25%;
+        display: flex;
+        gap: 20px;
+        padding: 10px 20px;
+        justify-content: right;
+        font-size: 15px;
+
+        .right {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+
+            img {
+                width: 15px;
+                height: 15px;
+                cursor: pointer;
+            }
+        }
+
+        .right2 {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            cursor: pointer;
+            color: #4285f4;
+
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        .detail-view {
+            cursor: pointer;
+            color: red;
+        }
+    }
+}
